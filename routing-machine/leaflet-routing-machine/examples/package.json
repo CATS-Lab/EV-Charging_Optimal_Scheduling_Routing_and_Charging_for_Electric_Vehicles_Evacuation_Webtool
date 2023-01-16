@@ -1,0 +1,23 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "main": "Control.Geocoder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify-shim": "^3.8.14",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "request": "^2.88.2",
+    "save": "^2.4.0",
+    "superagent": "^6.1.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

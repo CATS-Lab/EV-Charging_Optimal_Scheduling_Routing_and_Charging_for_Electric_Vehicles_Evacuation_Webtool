@@ -1,0 +1,501 @@
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+/*color: red;*/
+}
+
+/*horizontal tab*/
+  .tab {
+    overflow: hidden;
+    border: 1px solid #016121;
+    background: linear-gradient(#016121,#187328 29%,#4c9d37 79%,#5aa83b);
+  }
+
+  .tab a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  /* Change color on hover */
+  .tab a:hover {
+    background-color: #dcdcdc;
+    color: black;
+  }
+
+  .tab button.active {
+  background-color: #ccc;
+  }
+
+
+/*Each horizontal tab description*/
+  .tabcontent {
+  display: none;
+  padding: 0px 12px;
+  border: 0.5px solid #ccc;
+  background-color: #E3FAD8;
+  height: 100%:
+  }
+
+/*Each horizontal tab description, when you click*/
+  .topright {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  }
+
+  .topright:hover {color: red;}
+/*Detail form of horizontal tab, named Connections*/
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+#booking {
+font-family: 'Arial', sans-serif;
+background-image: url(images/electric-station.png);
+background-size: cover;
+background-position: center;
+}
+
+.booking-form {
+max-width: 642px;
+width: 100%;
+margin: auto;
+}
+
+.booking-form .form-header {
+text-align: center;
+margin-bottom: 25px;
+}
+
+.booking-form .form-header h1 {
+font-size: 40px;
+text-transform: uppercase;
+font-weight: 700;
+color: #ffc001;
+margin: 0px;
+}
+
+.booking-form .form-control {
+background-color: #f5f5f5;
+border: none;
+height: 45px;
+border-radius: 3px;
+-webkit-box-shadow: none;
+box-shadow: none;
+font-weight: 400;
+color: #101113;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+color: rgba(16, 17, 19, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+color: rgba(16, 17, 19, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+color: rgba(16, 17, 19, 0.3);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+color: rgba(16, 17, 19, 0.3);
+}
+
+.booking-form select.form-control {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+position: absolute;
+right: 0px;
+bottom: 6px;
+width: 32px;
+line-height: 32px;
+height: 32px;
+text-align: center;
+pointer-events: none;
+color: #101113;
+font-size: 14px;
+}
+
+
+.booking-form .form-label {
+color: #101113;
+font-size: 12px;
+font-weight: 400;
+margin-bottom: 5px;
+display: block;
+text-transform: uppercase;
+}
+
+.booking-form .submit-btn {
+color: #101113;
+background-color: #ffc001;
+font-weight: 700;
+height: 50px;
+border: none;
+width: 100%;
+display: block;
+border-radius: 3px;
+text-transform: uppercase;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+/*Right side of horizontal tab, for signup and login tan location*/
+  .tab-right {
+    float: right;
+  }
+/*Sth*/
+
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal1-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+#SignUp {
+font-family: 'Arial', sans-serif;
+background-image: url(images/electric-station.png);
+background-size: cover;
+background-position: center;
+}
+
+
+.SignUp-form {
+max-width: 642px;
+width: 100%;
+margin: auto;
+}
+
+.SignUp-form .form-header {
+text-align: center;
+margin-bottom: 25px;
+}
+
+.SignUp-form .form-header h1 {
+font-size: 40px;
+text-transform: uppercase;
+font-weight: 700;
+color: #ffc001;
+margin: 0px;
+}
+
+
+.SignUp-form .submit-btn {
+color: #101113;
+background-color: #ffc001;
+font-weight: 700;
+height: 50px;
+border: none;
+width: 100%;
+display: block;
+border-radius: 3px;
+text-transform: uppercase;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+*/
+
+
+/*{box-sizing: border-box;} for horizontal tab and searchbar*/
+  body {
+  margin: 0;
+  font-family: Arial;
+  }
+/*Location search bar*/
+  .topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  }
+
+  .topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 17px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  }
+
+  .topnav a:hover {
+  background-color: #dcdcdc;
+  color: black;
+  }
+
+  .topnav a.active {
+  background-color: #f1f1f1;
+  color: black;
+  }
+
+  .topnav .search-container {
+  float: left;
+  border: solid;
+
+  }
+
+  .topnav input[type=text] {
+  padding: 10px 10px;
+  margin-top: 1px;
+  font-size: 18px;
+  position: center;
+  /*border: solid; */
+  }
+
+  .topnav .search-container button {
+  float: right;
+  padding: 10px 15px;
+  margin-top: 3px;
+  margin-right: 1px;
+  position: center;
+  /*border: solid; */
+  background: #dcdcdc;
+  font-size: 18px;
+  order: none;
+  cursor: pointer;
+  }
+
+  .topnav .search-container button:hover {
+  background: #ccc;
+  }
+
+  @media screen and (max-width: 600px) {
+  .topnav .search-container {
+  float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  }
+  .topnav input[type=text] {
+  border: 1px solid #ccc;
+  }
+  }
+/*Vertical filter location and table*/
+.columnl {
+ float: left;
+ width: 25%;
+ padding: 1px;
+ margin: 1px;
+ height: 100%;
+}
+.columnr {
+ float: right;
+ width: 74.3%;
+ margin: 1px;
+ height: 100%;
+ padding-top: 1px;
+}
+
+.columnrm {
+  float: right;
+  width: 100%;
+  margin: 1px;
+  height: 100%;
+  padding-top: 1px;
+ }
+
+
+.colu2 {
+ float: right;
+ width: 100%;
+ margin: 1px;
+ height: 100%;
+ padding-top: 1px;
+}
+.row {
+ width: 100%;
+ display: table;
+}
+
+  table {
+    margin: 0 15px;
+    width:15%;
+    }
+  table {
+      width:15%;
+      }
+  table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      }
+  th{
+      padding: 22px;
+      text-align: center;
+      }
+    td{
+      padding: 15px;
+      text-align: left;
+      }
+
+  #tf th {
+    background-color: #ccc;
+    color: black;
+    border-collapse: collapse;
+    }
+
+/*For map*/
+  #map {
+    height:1137px;
+    width: 100%;
+
+  }

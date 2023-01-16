@@ -1,0 +1,60 @@
+<!-- This is the login page based on HTML. The HyperText Markup Language or HTML is the standard markup language for documents
+  designed to be displayed in a web browser. It can be assisted by technologies 
+  such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. 
+  The login.html includes .css documents to style the webpage and login.php document to link to login.php documents. -->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- links to font-awesome.min.csss -->
+  <link rel="stylesheet" href="./css/styleLogin.css"><!-- links to styleLogin.css -->
+</head>
+
+<body bgcolor="#a7c7ab">
+  <div id="id02" class="tabcontent">
+    <span onclick="parent.location='index.html'" class="close" title="Close Modal">&times</span>
+    <form class="modal-content animate" action="login.php" method="POST"> <!-- action link to login.php documents -->
+      
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="login-form">
+              <div class="form-header">
+                <h1>Login</h1>
+                <hr>
+              </div>
+
+              <label for="email"><b>Email</b></label> <!-- define label and placeholder for Email -->
+              <input type="text" placeholder="Enter Email" name="email" required> <!-- define label and placeholder for Enter Email -->
+              <label for="password"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="password" required><!-- define label and placeholder for Enter Password -->
+              <div class="clearfix">
+                <button type="submit" class="loginpbtn" vaule="login">Log In</button><!-- define button for login -->
+              </div>
+
+              <p class="message" style="blue"><b><a href="#">Forgot Password?</a></b></p><!-- define message pagraph for login -->
+
+              <p class="message">Don't have an account? <a href="signup.html">Sign Up</a>
+              </p>
+            </div>
+          </div>
+          <script>
+            var modal = document.getElementById('id02');
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "";
+              }
+            }
+          </script><!-- close the id02 -->
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

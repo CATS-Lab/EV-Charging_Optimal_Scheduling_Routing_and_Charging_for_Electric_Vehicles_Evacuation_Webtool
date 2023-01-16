@@ -1,0 +1,154 @@
+<!--This reservation.html is for  "make a reservation"on navigation manue of reseUser.php page. It is assisted by technologies 
+   Cascading Style Sheets (CSS). 
+  The reservation.html includes reseUser.php files and reservation.php to make route reservation. 
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make Reservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styleBook.css">
+</head>
+
+<body bgcolor="#a7c7ab">
+    <div id="id02" class="tabcontent">
+        <span onclick="parent.location='reseUser.php'" class="close" title="Close Modal">&times</span>
+        <!-- onclick close action link to reseUser.php document -->
+        <form class="modal-content animate" action="reservation.php" method="post">
+            <!-- onclick link to reservation.php document -->
+            <div class="section-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="book-form">
+                            <div class="form-header">
+                                <h1>Reservation</h1>
+                                <hr>
+                            </div>
+
+
+                            <!-- set the origin and its selection options-->
+                            <label for="Origin"><b>Choose Origin</b></label>
+                            <select class="location" name="origin">
+                                <option value="Pensacola">Pensacola</option>
+                                <option value="Panama City"> Panama City</option>
+                                <option value="Youngstown">Youngstown</option>
+                                <option value="Port St Joe">Port St Joe</option>
+                                <option value="Tallahassee">Tallahassee</option>
+                                <option value="Perry">Perry</option>
+                                <option value="Gainesville">Gainesville</option>
+                                <option value="Jacksonville">Jacksonville</option>
+                                <option value="Lake city">Lake city</option>
+                                <option value="Daytona Beach">Daytona Beach</option>
+                                <option value="Ocala">Ocala</option>
+                                <option value="Cedar Key">Cedar Key</option>
+                                <option value="Wildwood">Wildwood</option>
+                                <option value="Titusville">Titusville</option>
+                                <option value="Orlando">Orlando</option>
+                                <option value="Vero Beach">Vero Beach</option>
+                                <option value="Lake Placid">Lake Placid</option>
+                                <option value="Cleveland">Cleveland</option>
+                                <option value="Sarasota">Sarasota</option>
+                                <option value="Tampa">Tampa</option>
+                                <option value="South Bay">South Bay</option>
+                                <option value="West Palm Beach">West Palm Beach</option>
+                                <option value="Dania Beach">Dania Beach</option>
+                                <option value="Miami">Miami</option>
+                                <option value="Islamorada">Islamorada</option>
+                                <option value="Key West">Key West</option>
+                            </select>
+
+                            <!-- set the destination and its selction option-->
+                            <label for="destination"><b>Choose Destination</b></label>
+                            <select class="location" name="destination">
+                                <option value="Pensacola">Pensacola</option>
+                                <option value="Panama City"> Panama City</option>
+                                <option value="Youngstown">Youngstown</option>
+                                <option value="Port St Joe">Port St Joe</option>
+                                <option value="Tallahassee">Tallahassee</option>
+                                <option value="Perry">Perry</option>
+                                <option value="Gainesville">Gainesville</option>
+                                <option value="Jacksonville">Jacksonville</option>
+                                <option value="Lake city">Lake city</option>
+                                <option value="Daytona Beach">Daytona Beach</option>
+                                <option value="Ocala">Ocala</option>
+                                <option value="Cedar Key">Cedar Key</option>
+                                <option value="Wildwood">Wildwood</option>
+                                <option value="Titusville">Titusville</option>
+                                <option value="Orlando">Orlando</option>
+                                <option value="Vero Beach">Vero Beach</option>
+                                <option value="Lake Placid">Lake Placid</option>
+                                <option value="Cleveland">Cleveland</option>
+                                <option value="Sarasota">Sarasota</option>
+                                <option value="Tampa">Tampa</option>
+                                <option value="South Bay">South Bay</option>
+                                <option value="West Palm Beach">West Palm Beach</option>
+                                <option value="Dania Beach">Dania Beach</option>
+                                <option value="Miami">Miami</option>
+                                <option value="Islamorada">Islamorada</option>
+                                <option value="Key West">Key West</option>
+                            </select>
+
+                            <!-- set the electric_level and its input option-->
+                            <label for="electric_level"><b>Electric Level (%) </b></label><b></b>
+                            <input type="text" placeholder="Initial Electric Level (%)" name="electric_level" required>
+
+                            <!-- set the book time and its option-->
+                            <label for="departure_date"><b>Departure date</b></label>
+                            <input type="date" name="departure_date" required>
+
+                            <label for="departure_time"><b>Departure_time</b></label>
+                            <select class="text" name="departure_time">
+                                <option value="00:00~1:00 AM">00:00~1:00 AM</option>
+                                <option value="1:00~2:00 AM">1:00~2:00 AM</option>
+                                <option value="2:00~3:00 AM">2:00~3:00 AM</option>
+                                <option value="3:00~4:00 AM">3:00~4:00 AM</option>
+                                <option value="4:00~5:00 AM">4:00~5:00 AM</option>
+                                <option value="5:00~6:00 AM">5:00~6:00 AM</option>
+                                <option value="6:00~7:00 AM">6:00~7:00 AM</option>
+                                <option value="7:00~8:00 AM">7:00~8:00 AM</option>
+                                <option value="8:00~9:00 AM">8:00~9:00 AM</option>
+                                <option value="9:00~10:00 AM">9:00~10:00 AM</option>
+                                <option value="10:00~11:00 AM">10:00~11:00 AM</option>
+                                <option value="11:00~12:00 AM">11:00~12:00 AM</option>
+                                <option value="12:00~1:00 PM">12:00~1:00 PM</option>
+                                <option value="1:00~2:00 PM">1:00~2:00 PM</option>
+                                <option value="2:00~3:00 PM">2:00~3:00 PM</option>
+                                <option value="3:00~4:00 PM">3:00~4:00 PM</option>
+                                <option value="4:00~5:00 PM">4:00~5:00 PM</option>
+                                <option value="5:00~6:00 PM">5:00~6:00 PM</option>
+                                <option value="6:00~7:00 PM">6:00~7:00 PM</option>
+                                <option value="7:00~8:00 PM">7:00~8:00 PM</option>
+                                <option value="8:00~9:00 PM">8:00~9:00 PM</option>
+                                <option value="9:00~10:00 PM">9:00~10:00 PM</option>
+                                <option value="10:00~11:00 PM">10:00~11:00 PM</option>
+                                <option value="11:00~12:00 PM">11:00~12:00 PM</option>
+
+                            </select>
+
+
+                            <!--set the reserve action-->
+
+                            <div class="clearfix">
+                                <button type="submit" name="submit" vaule="Reserve">Reserve</button>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        var modal = document.getElementById('id02');
+                        window.onclick = function (event) {
+                            if (event.target == modal) {
+                                modal.style.display = "";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!-- This is the index page based on HTML. The HyperText Markup Language or HTML is the standard markup language for documents
+  designed to be displayed in a web browser. It can be assisted by technologies 
+  such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. 
+  The index.html includes css files and map.js JavaScript to realize its functionality. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>EV Station</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="./css/style.css"> <!-- This links to the Style.css document -->
+  <link rel="stylesheet" href="./css/styleI.css"> <!-- This links to the StyleI.css document -->
+
+  <meta charset="utf-8" <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="#" />
+
+  <!-- This links to leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+</head>
+
+<body>
+  <div style="background-color:#00324d" ;>
+    <div class="headerbar" style="width: 55%">
+      <img src="img/brandname1.JPG" width="240" height="60" class="logo fltlft">
+    </div>
+  </div>
+  <div class="topnav">
+
+   
+    <a href="login.html" style="float:right"><i class="fa fa-sign-in">&nbsp; LOG IN</i></a>  <!-- This links to login.html -->        
+    <a href="signup.html" style="float:right"><i class="fa fa-user-plus">&nbsp; SIGN UP</i></a> <!-- This links to signup.html -->     
+    <a href="index.html" style="float:right"><i class="fa fa-home">&nbsp; HOME</i></a> <!-- This links to index.html -->
+  </div>
+
+  <div class="columnrm" id="rightbar">
+    <div id="map"></div>
+  </div>
+
+  <script src="js\map.js"></script>  <!-- This links to map.js -->
+
+</body>
+
+</html>
