@@ -1,6 +1,6 @@
 ﻿ # EV Charging-Optimal Scheduling, Routing, and Charging for Electric Vehicles in Hurricane Evacuation: Webtool
 
-Introduction:
+## Introduction:
 
     This is a webtool to show the planned route in hurricane evacuation. 
 
@@ -14,7 +14,7 @@ Introduction:
 
 
 
-Environment of Webtool:
+## Environment of Webtool:
 
     XAMPP web server solution: a free and open-source cross-platform web server solution stack package 
 
